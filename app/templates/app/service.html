@@ -1,0 +1,67 @@
+{% extends 'app/layout.html' %}
+
+{% block content %}
+<section class="section">
+    <div>
+        <p class="Name-heading">
+            <span> welcome, </span><span> {{name}} |   </span>
+            <a class="logout-ico" href="{% url 'logout_user' %}"> <i class='fas fa-sign-out-alt'></i> </a>
+        </p>
+    </div>
+    <div class="services-content">
+        <h1 class="headingh1"> SERVICES </h1>
+        <h2 class="services-heading">Elevate Your Capabilities</h2>
+
+        <div class="services-features">
+            <div class="services-feature">
+                <h3>Real-Time Object Detection Solutions</h3>
+                <p class="p">Step into the realm of instant object recognition and tracking with our state-of-the-art AI technology. Our real-time object detection solutions redefine how the world is perceived. Uncover insights, enhance safety, and transform operations across industries through the power of AI-driven object identification.</p>
+            </div>
+            <div class="services-feature">
+                <h3>Custom Integration</h3>
+                <p class="p">We recognize that each organization operates in a unique ecosystem. Our custom integration services ensure that our solutions seamlessly merge with your existing systems. This tailored approach enhances compatibility, optimizing the potential of our technology within your operations.</p>
+            </div>
+            <div class="services-feature">
+                <h3>Consultation and Training</h3>
+                <p class="p">Our commitment to your success goes beyond technology. Our consultation and training programs provide you with the knowledge and skills to harness the full capabilities of real-time object detection. Leverage our expertise to implement strategies, interpret insights, and make informed decisions.</p>
+            </div>
+        </div>
+
+        <div class="services-why-choose">
+            <div class="services-why-choose-item">
+                <h3>Additional Offerings</h3>
+                <ul>
+                    <li>Performance Optimization: Fine-tune our solutions to achieve optimal performance in your specific environment.</li>
+                    <li>Continuous Support: Our support doesn't end with implementation. We offer ongoing assistance to ensure your success.</li>
+                    <li>Custom Development: Tailor our technology further to meet unique challenges and requirements.</li>
+                </ul>
+            </div>
+            <div class="services-why-choose-item">
+                <h3>Why Choose Our Services</h3>
+                <ul>
+                    <li>Innovation at Its Core: Our solutions are born from innovation, designed to lead in the dynamic landscape of technology.</li>
+                    <li>Expertise that Matters: Our team's expertise spans AI, machine learning, and computer vision, ensuring top-notch solutions.</li>
+                    <li>Holistic Approach: We provide end-to-end solutions, from implementation to training, for a comprehensive experience.</li>
+                    <li>Empowerment Through Knowledge: Our training empowers you with the skills to maximize the potential of AI technology.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="services-transform">
+            <h2>Industries We Transform</h2>
+            <ul>
+                <li>Security and Surveillance</li>
+                <li>Retail and Customer Insights</li>
+                <li>Healthcare and Medical Diagnostics</li>
+                <li>Automotive Advancements</li>
+                <li>Manufacturing and Process Optimization</li>
+            </ul>
+        </div>
+
+        <div class="services-partner">
+            <h2>Partner with Us</h2>
+            <p>Your journey towards embracing AI-driven object detection starts here. Whether you seek operational efficiency, data insights, or innovation, our services are tailored to meet your aspirations. Let's collaborate to unlock the full potential of AI in your domain.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

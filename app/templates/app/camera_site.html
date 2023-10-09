@@ -1,0 +1,65 @@
+{% extends "app/layout.html" %}
+{% block content %}
+<section class="section ">
+    <div>
+        <p class="Name-heading">
+            <span> welcome, </span><span> {{name}} |   </span>
+            <a class="logout-ico" href="{% url 'logout_user' %}"> <i class='fas fa-sign-out-alt'></i> </a>
+        </p>
+    </div>
+    <div class="services-content">
+        <h1 class="headingh1"> Detect Object In Live Video </h1>
+        <div class="services-features">
+            <form method="post" id="form" enctype="multipart/form-data" class="form">
+                {% csrf_token %}
+                <h2> Select the Services </h2>
+                <select id="Selector" class="Selector" name="input">
+                    {% if input_value == "None"%}
+                    <option value="None" selected> None</option>
+                    {% else %}
+                    <option value="None"> None</option>
+                    {% endif %}
+
+
+                    {% if input_value == "Video"%}
+                    <option value="Video" selected>Live Video</option>
+                    {% else %}
+                    <option value="Video">Live Video</option>
+                    {% endif %}
+                </select>
+                {% if input_value == "Image"%}
+                <input type="file" name="check_img" accept="image/*" />
+                {% endif %}
+
+
+
+                <input type="submit" value="Submit" class="swtich" />
+            </form>
+            {% if not input_value == "None" %}
+            <div id="camera_in" class="camera">
+                {% if input_value == "Image"%}
+                <img class="img_video" alt="Image" src="{% url 'img_feed' %}" />
+                {% endif %}
+                {% if input_value == "Video"%}
+                <img class="img_video" alt="Live Video" src="{% url 'video_feed' %}" />
+                {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="services-feature">
+        <h3>Python</h3>
+        <p>Python is a popular and versatile programming language that can be used for web development, data analysis, machine learning, and more. It has a simple syntax that is similar to the English language and allows developers to write programs with fewer lines of code. Python runs on an interpreter system, which means that code can be executed as soon as it is written, making prototyping very quick. Python also has a large and diverse community of programmers who contribute to its development and provide many libraries and frameworks for various applications</p>
+    </div>
+    <div class="services-feature">
+        <h3>Open CV</h3>
+        <p>Real-time object detection is a computer vision task that identifies and locates objects in video streams. OpenCV is a library for computer vision that can be used with Python. Different models can be used with OpenCV, such as YOLOv3, Haar-Cascade Classifier, etc. These models have different strengths and weaknesses, such as speed, accuracy, and complexity. Some source code examples are available online that show how to use OpenCV and Python for real-time object detection. </p>
+    </div>
+    <div class="services-feature">
+        <h3>Django</h3>
+        <p>Django is a web framework that lets you create dynamic websites using Python. Django follows the principle of "don't repeat yourself", which means you can write less code and avoid duplication. Django also provides many features such as authentication, database management, templates, forms, testing, security, and more. Django is open source and has a large and active community of developers who contribute to its improvement and documentation. Whether you want to build a blog, a social network, an e-commerce site, or anything else, Django can help you make it happen.</p>
+    </div>
+</section>
+
+
+{% endblock %}

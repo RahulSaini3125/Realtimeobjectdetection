@@ -1,0 +1,71 @@
+{% extends 'app/layout.html' %}
+
+{% block content %}
+<section class="section">
+
+    <div>
+        <p class="Name-heading">
+            <span> welcome, </span><span> {{name}} |   </span>
+            <a class="logout-ico" href="{% url 'logout_user' %}"> <i class='fas fa-sign-out-alt'></i> </a>
+        </p>
+    </div>
+
+    <div class="services-content">
+        <h1 class="headingh1"> CONTACT US</h1>
+        <h2 class="services-heading"> DEVELOPERS </h2>
+        <div class="services-features">
+            <div class="services-features box">
+                <img class="img-layout" src="../../static/app/content/Rahul Jain.jpg" />
+                <div class="heading-layout">
+                    <i class="fa-solid fa-user fa-xl p-3"></i>
+                    <h3>Rahul Jain</h3>
+                </div>
+                <p> Django </p>
+                <div class="heading-layout">
+                    <i class="fa-solid fa-envelope fa-xl p-3"></i>
+                    <a href="mailto:21bca1721@cuchd.in"> 21BCA1721@cuchd.in </a>
+                </div>
+            </div>
+            <div class="services-features box">
+                <img class="img-layout" src="../../static/app/content/Rahul.jpg" />
+
+                <div class="heading-layout">
+                    <i class="fa-solid fa-user fa-xl p-3"></i>
+                    <h3>Rahul</h3>
+                </div>
+
+                <p> HTML  </p>
+                <div class="heading-layout">
+                    <i class="fa-solid fa-envelope fa-xl p-3"></i>
+                    <a href="mailto:21bca1993@cuchd.in"> 21BCA1993@cuchd.in </a>
+                </div>
+            </div>
+            <div class="services-features box">
+                <img class="img-layout" src="../../static/app/content/Sahil.jpg" />
+                <div class="heading-layout">
+                    <i class="fa-solid fa-user fa-xl p-3"></i>
+                    <h3>Sahil</h3>
+                </div>
+                <p> CSS</p>
+                <div class="heading-layout">
+                    <i class="fa-solid fa-envelope fa-xl p-3"></i>
+                    <a href="mailto:21bca2088@cuchd.in"> 21BCA2088@cuchd.in </a>
+                </div>
+            </div>
+            <div class="services-features box">
+                <img class="img-layout" src="../../static/app/content/Rahul Saini.jpg" />
+                <div class="heading-layout">
+                    <i class="fa-solid fa-user fa-xl p-3"></i>
+                    <h3>Rahul Saini</h3>
+                </div>
+                <p> Python </p>
+                <div class="heading-layout">
+                    <i class="fa-solid fa-envelope fa-xl p-3"></i>
+                    <a href="mailto:21bca1953@cuchd.in"> 21BCA1953@cuchd.in </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<section class="main_section">
+    <p class="Name-heading">
+        <span> welcome, </span><span> {{name}} |   </span>
+        <a class="logout-ico" href="{% url 'logout_user' %}"> <i class='fas fa-sign-out-alt'></i> </a>
+    </p>
+    <div class="Main-outter">
+        <main class="Main">
+            <h1 class=" leads leads-heading">Object Detection</h1>
+            <p class="leads"> Object detection is a computer vision technique that involves detecting instances of objects in images or videos. It is used to locate objects of interest within an image or video and identify their position and size. Object detection algorithms typically leverage machine learning or deep learning to produce meaningful results </p>
+            <p class="">
+                <a href="{% url 'camera_site' %}" class="Main-btn">Get Strat</a>
+            </p>
+        </main>
+    </div>
+</section>
+
+{% endblock %}

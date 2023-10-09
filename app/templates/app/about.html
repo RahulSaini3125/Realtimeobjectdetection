@@ -1,0 +1,60 @@
+{% extends 'app/layout.html' %}
+
+
+{% block content %}
+<section id="home" class="section">
+    <div>
+        <p class="Name-heading">
+            <span> welcome, </span><span> {{name}} |   </span>
+            <a class="logout-ico" href="{% url 'logout_user' %}"> <i class='fas fa-sign-out-alt'></i> </a>
+        </p>
+    </div>
+    <div class="content">
+        <h1 class="headingh1"> ABOUT US </h1>
+        <h2>Welcome to Real Time Object Detection</h2>
+        <p>We are at the forefront of real-time object detection technology, pushing the boundaries of artificial intelligence to transform the way objects are identified and understood. Our commitment to innovation and excellence drives us to deliver solutions that redefine industries and enhance user experiences.</p>
+
+        <div class="why-choose-us">
+            <h2>Why Choose Us</h2>
+            <ul>
+                <li><strong>Innovative AI Solutions:</strong> Our groundbreaking AI technology enables real-time object detection with unparalleled accuracy and speed.</li>
+                <li><strong>Expert Team:</strong> Our team of computer vision and machine learning experts is passionate about pushing the limits of technology.</li>
+                <li><strong>Cross-Industry Impact:</strong> From security and healthcare to retail and automotive, our solutions have a wide range of applications.</li>
+                <li><strong>User-Centric Approach:</strong> We focus on user needs, ensuring that our technology provides practical solutions to real-world challenges.</li>
+            </ul>
+        </div>
+
+        <div class="explore-features">
+            <h2>Explore Our Features</h2>
+            <ul>
+                <li><strong>Instant Recognition:</strong> Experience seamless real-time detection and tracking of objects, enhancing situational awareness.</li>
+                <li><strong>Customizable Integration:</strong> Tailor our technology to seamlessly integrate into your existing systems, empowering your operations.</li>
+                <li><strong>Scalable Solutions:</strong> Whether you're a small business or a large enterprise, our solutions can be scaled to fit your requirements.</li>
+                <li><strong>Continuous Learning:</strong> Our AI continually adapts and improves, ensuring consistent performance even in dynamic environments.</li>
+            </ul>
+        </div>
+
+        <div class="our-mission">
+            <h2>Our Mission</h2>
+            <p class="p">At Chandigarh University, our mission is to redefine what's possible with real-time object detection. We envision a future where AI-driven insights shape decision-making across industries, making processes safer, more efficient, and smarter.</p>
+        </div>
+
+        <div class="stay-informed">
+            <h2>Stay Informed</h2>
+            <p class="p">Stay updated with the latest advancements in real-time object detection, AI, and technology trends through our blog. Our articles provide valuable insights into the applications, benefits, and challenges of these innovative technologies.</p>
+        </div>
+
+        <div class="ready-to-experience">
+            <h2>Ready to Experience the Future?</h2>
+            <p class="p">Join us on the journey to unlock the potential of real-time object detection. Explore our services, dive into our resources, and get in touch to see how our AI solutions can transform your world.</p>
+        </div>
+
+        {% comment %} <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> contact@yourcompany.com</p>
+            <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+            <p><strong>Address:</strong> 123 AI Avenue, Tech City, Country</p>
+        </div> {% endcomment %}
+    </div>
+</section>
+{% endblock %}
