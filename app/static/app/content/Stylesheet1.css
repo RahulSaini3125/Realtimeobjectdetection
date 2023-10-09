@@ -1,0 +1,233 @@
+/* Static CSS for styling the servies, about us , contact us */
+
+.section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    margin-top: 60px;
+}
+
+
+
+.headingh1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: red;
+}
+
+.p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.why-choose-us ul,
+.explore-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+    .why-choose-us ul li,
+    .explore-features ul li {
+        margin-bottom: 1rem;
+    }
+
+        .why-choose-us ul li strong,
+        .explore-features ul li strong {
+            font-weight: bold;
+        }
+
+.our-mission,
+.stay-informed,
+.ready-to-experience,
+.contact-info {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ccc;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: absolute;
+}
+
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+.services-section {
+    background-color: #f9f9f9;
+    margin-top: 60px
+}
+
+
+
+.services-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.services-item {
+    margin-bottom: 3rem;
+}
+
+    .services-item h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .services-item p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 1.5rem;
+    }
+
+.services-features,
+.services-why-choose {
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.services-feature,
+.services-why-choose-item {
+    flex-basis: calc(50% - 1rem);
+    padding: 1rem;
+}
+
+
+
+.form {
+    display: flex;
+    height: 2rem;
+}
+
+
+.Selector {
+    display: flex;
+    margin: 0px 8px 0px 10px;
+    border-radius: 4px;
+}
+
+.swtich {
+    display: flex;
+    color: white;
+    background-color: #007BFF;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    align-content: center;
+}
+
+.camera {
+    width: 816px;
+    height: 516px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+
+.img_video {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 10px;
+}
+
+
+/* Static CSS for styling the homepage */
+.logout-ico {
+    text-decoration: none;
+    color: black;
+    color: black;
+}
+
+.main_section {
+    display: block;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    padding: 2em;
+}
+
+
+.Name-heading {
+    text-align: right;
+    margin-right: 12px;
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+
+.Main-outter {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 75vh;
+}
+
+.Main {
+    text-align: center;
+    max-width: 150vh;
+}
+
+.Main-btn {
+    background-color: #007BFF;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+}
+
+    .Main-btn:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+.leads-heading {
+    font-size: 6.5em;
+    text-transform: uppercase;
+}
+
+.footer-color {
+    color: blue;
+}
+
+.img-layout {
+    width: 250px;
+    height: 250px;
+    border-radius: 35px;
+    margin-bottom: 5px;
+}
+
+.box {
+    background-color: #eae8e8;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    text-align: center;
+    padding: 15px 10px 10px 10px;
+    border-radius: 15px;
+}
+
+.heading-layout {
+    display: flex;
+    justify-content: center;
+}

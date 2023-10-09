@@ -62,6 +62,7 @@
     <Content Include="app\static\app\content\Rahul Saini.jpg" />
     <Content Include="app\static\app\content\Rahul.jpg" />
     <Content Include="app\static\app\content\Sahil.jpg" />
+    <Content Include="app\static\app\content\Stylesheet1.css" />
     <Content Include="app\templates\app\camera_site.html" />
     <Content Include="app\templates\app\home.html" />
     <Content Include="app\templates\app\service.html" />
