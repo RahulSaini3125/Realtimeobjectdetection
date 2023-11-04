@@ -82,7 +82,7 @@ def get_frame(video):
                model.setInputScale(1.0/127.5)
                model.setInputMean((127.5,127.5,127.5))
                model.setInputSwapRB(True)
-               classindex, confidece, bbox = model.detect(frame,confThreshold = 0.5)
+               classindex, confidece, bbox = model.detect(frame,confThreshold = 0.3)
                font_scale = 3
                font = cv.FONT_HERSHEY_PLAIN
                for classind, conf, boxes in zip(classindex.flatten(), confidece.flatten(), bbox):
